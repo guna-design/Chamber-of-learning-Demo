@@ -420,8 +420,8 @@ HEADER
 }
 
 .header-area .main-nav .nav li.has-sub ul li a:hover {
-  background: #fff;
-  color: #f5a425!important;
+  background: #3cdd4f;;
+  color: #000000!important;
   padding-left: 25px;
 }
 
@@ -765,6 +765,7 @@ banner
 
 .join-link{
   color: #3cdd4f;
+  text-decoration-line: underline ;
 }
 
 
@@ -839,6 +840,11 @@ services
 .services .item p {
   color: #fff;
   font-size: 14px;
+}
+
+
+.owl-icon{
+  color: #000000;
 }
 
 .services .owl-nav {
@@ -1151,7 +1157,7 @@ section.our-courses {
 }
 
 .our-courses .item .down-content .info ul li i {
-  color: #f5a425;
+  color: #3cdd4f;;
   font-size: 14px;
 }
 
@@ -1674,7 +1680,7 @@ section.meetings-page .filters {
 
 section.meetings-page .filters li {
   font-size: 13px;
-  color: #3cdd4f;
+
   background-color: #fff;
   padding: 11px 30px;
   display: inline-block;
@@ -1689,7 +1695,7 @@ section.meetings-page .filters li {
 section.meetings-page .filters ul li.active,
 section.meetings-page .filters ul li:hover {
   background-color: #3cdd4f;
-  color: #fff;
+  color: #000000;
 }
 
 section.meetings-page .pagination {
