@@ -246,7 +246,7 @@ HEADER
   border: 1px solid rgba(255, 255, 255, 0.2); /* Optional border to enhance glass effect */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional subtle shadow */
 
-  color: #fff; /* Text color for better contrast */
+  color: #fff; 
 
 
 
@@ -271,16 +271,16 @@ HEADER
 
 .logo {
   display: flex;
-  align-items: center; /* Align items vertically */
-  text-decoration: none; /* Remove underline from link */
-  color: #fff; /* Set text color (adjust as needed) */
+  align-items: center; 
+  text-decoration: none; 
+  color: #fff; 
 }
 
 .logo-image {
-  width: 50px; /* Adjust the size of the image */
-  height: 50px; /* Make the image round */
-  border-radius: 50%; /* Create a round shape */
-  margin-right: 10px; /* Space between the image and text */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px; 
 }
 
 
@@ -1271,6 +1271,7 @@ section.founders {
 /*  */
 
 
+/* Video Section */
 .video {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.6); /* Adjust background as necessary */
@@ -1285,21 +1286,33 @@ canvas {
   border-radius: 20px; /* Apply the same border radius for consistency */
 }
 
-
+/* Founders Section */
 .founders {
   padding: 5rem 0;
 }
-.founders.h2{
-  text-align: p-2;
+
+.founders h2 {
+  text-align: center; /* Corrected the text alignment */
+  padding-bottom: 2rem;
+  font-size: 2rem;
 }
+
 .founder-card {
-  background-color: #1b2028;
+  background-color: rgba(27, 32, 40, 0.8); /* Semi-transparent background */
   border-radius: 16px;
   padding: 4rem;
   margin: 1rem;
   text-align: center;
   color: #f1f3f3;
   flex: 1 1 calc(45% - 2rem); /* Flex items to take 45% of the row with some margin */
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  position: relative;
+}
+
+/* Animation on hover */
+.founder-card:hover {
+  transform: translateY(-10px); /* Lift on hover */
+  background-color: rgba(27, 32, 40, 0.9); /* Slightly darken the background */
 }
 
 .profile-image {
@@ -1308,6 +1321,12 @@ canvas {
   width: 100px; /* Adjust size as needed */
   height: 100px; /* Adjust size as needed */
   margin: 0 auto;
+  transition: transform 0.3s ease-in-out; /* Smooth scaling effect */
+}
+
+/* Scale image on hover */
+.founder-card:hover .profile-image {
+  transform: scale(1.1); /* Slight zoom on hover */
 }
 
 .profile-image img {
@@ -1315,15 +1334,30 @@ canvas {
   height: auto;
 }
 
+/* Name and Position Styles */
 .name {
   font-size: 1rem;
   font-weight: 600;
   margin-top: 0.5rem; /* Add margin for spacing */
+  animation: fadeIn 1s ease-in-out;
 }
 
 .position {
   color: #7d8396;
-  font-size: 0.5rem;
+  font-size: 0.9rem;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Keyframe for fade-in effect */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 
