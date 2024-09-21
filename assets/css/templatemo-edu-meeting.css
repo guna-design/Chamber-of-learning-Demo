@@ -1110,7 +1110,7 @@ section.apply-now .item p {
   transition: transform 200ms ease-in-out;
 }
 .accordion-head.is-open {
-  color: #f5a425;
+  color: #f34848;
   border-bottom: none;
 }
 .accordion-head.is-open .icon {
@@ -1316,13 +1316,15 @@ canvas {
 
 
 .founders {
-  padding: 2rem 0;
+  padding: 5rem 0;
 }
-
+.founders.h2{
+  text-align: p-2;
+}
 .founder-card {
   background-color: #1b2028;
   border-radius: 16px;
-  padding: 1rem;
+  padding: 4rem;
   margin: 1rem;
   text-align: center;
   color: #f1f3f3;
@@ -1343,13 +1345,14 @@ canvas {
 }
 
 .name {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
   margin-top: 0.5rem; /* Add margin for spacing */
 }
 
 .position {
   color: #7d8396;
+  font-size: 0.5rem;
 }
 
 
