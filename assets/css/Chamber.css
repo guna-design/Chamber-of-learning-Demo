@@ -277,8 +277,8 @@ HEADER
 }
 
 .logo-image {
-  width: 50px;
-  height: 50px;
+  width: 75px;
+  height: 75px;
   border-radius: 50%;
   margin-right: 10px; 
 }
@@ -354,12 +354,12 @@ HEADER
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #f5a425!important;
+  color:#3cdd4f!important;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #f5a425!important;
+  color:#3cdd4f!important;
   opacity: 1;
 }
 
@@ -561,7 +561,7 @@ HEADER
 }
 
 .header-area.header-sticky .nav li a.active {
-  color: #f5a425;
+  color:#3cdd4f;
 }
 
 @media (max-width: 1200px) {
@@ -577,11 +577,19 @@ HEADER
 @media (max-width: 767px) {
   .header-area .main-nav .logo {
     color: #1e1e1e;
-    font-size: medium;
+    font-size: small;
   }
+
+
+  @media (max-width: 320px) {
+    .header-area .main-nav .logo {
+      font-size: xx-small;        /* Further reduce font size */
+    }
+  }
+
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    color: #f5a425!important;
+    color:#3cdd4f!important;
     opacity: 1;
   }
   .header-area.header-sticky .nav li.search-icon a {
@@ -639,7 +647,7 @@ HEADER
   }
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
-    color: #f5a425!important;
+    color:#3cdd4f !important;
   }
   .header-area .main-nav .nav li.has-sub ul.sub-menu {
     position: relative;
@@ -753,6 +761,12 @@ banner
   font-size: 14px;
   max-width: 570px;
 }
+
+
+.join-link{
+  color: #3cdd4f;
+}
+
 
 .main-banner .caption .main-button-red {
   margin-top: 30px;
@@ -917,7 +931,7 @@ section.upcoming-meetings .categories h4 {
 }
 
 section.upcoming-meetings .categories ul li {
-  display: inline-block;
+  display: flex;
   margin-bottom: 15px;
 }
 
@@ -1274,8 +1288,8 @@ section.founders {
 /* Video Section */
 .video {
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.6); /* Adjust background as necessary */
-  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.6); /* Adjust background as necessary */
+  padding: 10px;
   border-radius: 20px;
   max-width: 100%;
 }
@@ -1298,30 +1312,30 @@ canvas {
 }
 
 .founder-card {
-  background-color: rgba(27, 32, 40, 0.8); /* Semi-transparent background */
-  border-radius: 16px;
+  background-color: rgba(27, 32, 40, 0.8); 
   padding: 4rem;
   margin: 1rem;
   text-align: center;
   color: #f1f3f3;
-  flex: 1 1 calc(45% - 2rem); /* Flex items to take 45% of the row with some margin */
+  flex: 1 1 calc(45% - 2rem); 
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
   position: relative;
+  border-radius: 20%;
 }
 
 /* Animation on hover */
 .founder-card:hover {
-  transform: translateY(-10px); /* Lift on hover */
-  background-color: rgba(27, 32, 40, 0.9); /* Slightly darken the background */
+  transform: translateY(-10px); 
+  background-color: rgba(27, 32, 40, 0.9); 
 }
 
 .profile-image {
   border-radius: 50%;
   overflow: hidden;
-  width: 100px; /* Adjust size as needed */
-  height: 100px; /* Adjust size as needed */
+  width: 120px; 
+  height: 160px; 
   margin: 0 auto;
-  transition: transform 0.3s ease-in-out; /* Smooth scaling effect */
+  transition: transform 0.3s ease-in-out; 
 }
 
 /* Scale image on hover */
@@ -1336,17 +1350,21 @@ canvas {
 
 /* Name and Position Styles */
 .name {
-  font-size: 1rem;
+  font-size: 20px;
   font-weight: 600;
-  margin-top: 0.5rem; /* Add margin for spacing */
+  margin-top: 1rem;
+ /* Force text to stay on a single line */
   animation: fadeIn 1s ease-in-out;
 }
 
 .position {
   color: #7d8396;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  white-space: nowrap; /* Force text to stay on a single line */
   animation: fadeIn 1.5s ease-in-out;
 }
+
 
 /* Keyframe for fade-in effect */
 @keyframes fadeIn {
@@ -1656,7 +1674,7 @@ section.meetings-page .filters {
 
 section.meetings-page .filters li {
   font-size: 13px;
-  color: #a12c2f;
+  color: #3cdd4f;
   background-color: #fff;
   padding: 11px 30px;
   display: inline-block;
@@ -1670,7 +1688,7 @@ section.meetings-page .filters li {
 
 section.meetings-page .filters ul li.active,
 section.meetings-page .filters ul li:hover {
-  background-color: #a12c2f;
+  background-color: #3cdd4f;
   color: #fff;
 }
 
@@ -1711,7 +1729,7 @@ section.meetings-page .main-button-red a {
 
 section.meetings-page .pagination ul li.active a,
 section.meetings-page .pagination ul li a:hover {
-  background-color: #a12c2f;
+  background-color:#3cdd4f;;
   color: #fff;
 }
 
